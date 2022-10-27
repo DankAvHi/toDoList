@@ -1,0 +1,12 @@
+.FlatTextarea {
+     border: 1px solid white;
+
+     padding: 8px 5px;
+
+     resize: vertical;
+     min-height: 64px;
+}
+
+.FlatTextarea:focus {
+     border: 2px solid black;
+}

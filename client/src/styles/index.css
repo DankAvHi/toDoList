@@ -1,0 +1,51 @@
+@import url("./variables.css");
+* {
+     transition: 0.5s;
+     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+     list-style: none;
+     margin: 0;
+
+     border: none;
+
+     padding: 0;
+
+     box-sizing: border-box;
+
+     background: transparent;
+
+     font-family: var(--app-font-family);
+     font-size: var(--app-font-size);
+     text-decoration: none;
+     color: var(--white-90);
+}
+
+*:focus {
+     outline: 2px solid var(--black-20);
+     border-radius: 12px;
+}
+
+a,
+button,
+input[type="submit"] {
+     cursor: pointer;
+}
+
+a:hover,
+button:hover,
+input:hover {
+     border-radius: 5px;
+}
+
+a:active,
+button:active,
+input[type="submit"]:active {
+     transform: scale(0.9);
+}
+
+html,
+body,
+#root {
+     height: 100%;
+
+     background-color: var(--app-background-color);
+}

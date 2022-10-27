@@ -1,0 +1,11 @@
+.FlatInput {
+     border-bottom: 2px solid white;
+
+     padding: 8px 5px;
+
+     width: 100%;
+}
+
+.FlatInput:focus {
+     border-bottom: 2px solid black;
+}

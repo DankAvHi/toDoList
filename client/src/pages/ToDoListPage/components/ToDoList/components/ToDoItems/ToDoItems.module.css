@@ -1,0 +1,9 @@
+.ToDoItems {
+     display: flex;
+     flex-direction: column;
+     gap: 25px;
+}
+
+.heading {
+     font-size: 2rem;
+}
