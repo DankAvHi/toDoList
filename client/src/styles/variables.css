@@ -1,7 +1,7 @@
 @import url("./colors.css");
 
 :root {
-     --app-font-family: "Roboto Mono";
+     --app-font-family: "Arial";
      --app-font-size: 1em;
      --app-background-color: var(--black-10);
 }

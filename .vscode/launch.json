@@ -7,14 +7,28 @@
           {
                "name": "Client",
                "request": "launch",
-               "type": "chrome",
+               "type": "msedge",
                "url": "http://localhost:3000",
                "webRoot": "${workspaceFolder}/client"
           },
           {
+               "name": "Debug Client",
+               "type": "node-terminal",
+               "request": "launch",
+               "command": "npm start",
+               "serverReadyAction": {
+                   "pattern": "http://localhost:.*m([0-9]+)",
+                   "uriFormat": "http://localhost:%s",
+                   "killOnServerStop": true,
+                   "action": "debugWithEdge",
+                   "webRoot": "${workspaceFolder}/client"
+               },
+               "cwd": "${workspaceFolder}/client"
+           },
+          {
                "name": "Client_secure",
                "request": "launch",
-               "type": "chrome",
+               "type": "msedge",
                "url": "https://localhost:3000",
                "webRoot": "${workspaceFolder}/client"
           },
